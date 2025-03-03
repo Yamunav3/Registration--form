@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>FORM</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="styleform.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <h1>Registration Form</h1>
+        <hr>
+        </div>
+    
+    <form action="res.html" class="form" id="form">
+        <div class="field">
+            <label >UserName</label>
+            <input type="text" placeholder="Name" id="name">
+            <span class="material-icons success">
+                check_circle
+                </span>
+            <span class="material-icons error">error</span>
+            <small>error message!</small>
+        </div>
+        <!--  -->
+        <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="@gmail.com" id="mail">
+            <span class="material-icons success">
+                check_circle
+                </span>
+            <span class="material-icons error">error</span>
+            <small>error message!</small>
+        </div>
+        <!--  -->
+        <div class="field">
+            <label>Password</label>
+            <input type="password" placeholder="!@#1zxcv" minlength="4" maxlength="20" id="pass">
+            <span class="material-icons success">
+                check_box
+                </span>
+            <span class="material-icons error">error</span>
+            <small>error message!</small>
+        </div>
+        <!--  -->
+            <div class="field">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="!@#1zxcv" minlength="4" maxlength="20" id="cpass">
+            <span class="material-icons success">
+                check_box
+                </span>
+            <span class="material-icons error">error</span>
+            <small>error message!</small>
+            </div>
+            <!--  -->
+                <div class="field">
+                <input type="checkbox" id="check" class="terms">
+                <label> I agree the terms and Conditions.</label>
+                <small>error message!</small>
+                </div>
+                <input type="submit" class="button">
+                </form>
+            </div>
+<script src="validation.js">
+
+</script>
+            
+</body>
+</html>
